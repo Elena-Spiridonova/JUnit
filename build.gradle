@@ -1,8 +1,13 @@
+
 plugins {
     id 'java'
     id 'idea' // optional (to generate IntelliJ IDEA project files)
 }
+compileJava.options.encoding = 'utf-8'
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'utf-8'
+}
 repositories {
     mavenCentral()
 }
