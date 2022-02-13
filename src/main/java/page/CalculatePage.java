@@ -49,6 +49,9 @@ public class CalculatePage {
     @FindBy(css = "[jsname='VssY5c']")
     private WebElement result;
 
+    @FindBy(css = "[jsname='abcgof']")
+    private WebElement button6;
+
 
     public CalculatePage(WebDriver driver) {
         initElements(driver, this);
@@ -104,6 +107,11 @@ public class CalculatePage {
     }
     public CalculatePage clickButton5(){
         button5.click();
+        return this;
+    }
+
+    public CalculatePage clickButton6(){
+        button6.click();
         return this;
     }
 
