@@ -52,6 +52,9 @@ public class CalculatePage {
     @FindBy(css = "[jsname='abcgof']")
     private WebElement button6;
 
+    @FindBy(css = "[jsname='aN1RFf']")
+    private WebElement buttonSin;
+
 
     public CalculatePage(WebDriver driver) {
         initElements(driver, this);
@@ -114,6 +117,12 @@ public class CalculatePage {
         button6.click();
         return this;
     }
+
+    public CalculatePage clickButtonSin(){
+        buttonSin.click();
+        return this;
+    }
+
 
     public void clickButtonEqualMark(){
         buttonEqualMark.click();
